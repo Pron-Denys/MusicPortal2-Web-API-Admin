@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MusicPortal Web API/MusicPortal Web API.csproj" Id="adf0f61f-234c-4bf6-a427-6f5508e63c0e" />
+  <Project Path="MusicPortal.BLL/MusicPortal.BLL.csproj" />
+  <Project Path="MusicPortal.DAT/MusicPortal.DAL.csproj" />
+</Solution>

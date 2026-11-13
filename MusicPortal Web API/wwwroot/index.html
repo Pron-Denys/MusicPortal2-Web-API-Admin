@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музичний Каталог</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="StylePage.css" />
+</head>
+<body>
+    <script src="MusicPortal.js">        
+    </script>
+    <div class="container">
+        <header>
+            <h1>Music <span>Hub</span></h1>
+            <p>Панель управління музичним каталогом</p>
+        </header>
+
+        <div class="grid-layout">
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Додати пісню</h2>
+                </div>
+                <form id="form-music">
+                    <input type="hidden" name="id" value="0" />
+                    <label>Назва треку:</label>
+                    <input type="text" name="title" placeholder="Назва треку" required>
+                    <label>Виконавець:</label>
+                    <input type="text" name="songwriter" placeholder="Виконавець" required>
+                    <label>Рік випуску:</label>
+                    <input type="number" name="year" placeholder="Рік випуску" required>
+                    <label>Жанр:</label>
+                    <input type="text" name="genre" placeholder="Жанр" required>
+                    <label>URL обкладинки треку:</label>
+                    <input type="url" name="song_img" placeholder="URL обкладинки треку" required>
+                    <label>URL аудіофайлу (.mp3):</label>
+                    <input type="url" name="audio_url" placeholder="URL аудіофайлу (.mp3)" required>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Зберегти</button>
+                        <button type="reset" class="btn-reset" title="Очистити форму"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                </form>
+
+                <div id="list-musics" class="list-container">
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Додати жанр</h2>
+                </div>
+                <form id="form-genre">
+                    <input type="hidden" name="id" value="0" />
+                    <label>Назва жанру:</label>
+                    <input type="text" name="genre_name" placeholder="Назва жанру" required>
+                    <label>URL обкладинки жанру:</label>
+                    <input type="url" name="genre_img" placeholder="URL обкладинки жанру" required>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Зберегти</button>
+                        <button type="reset" class="btn-reset" title="Очистити форму"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                </form>
+
+                <div id="list-genres" class="list-container">
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h2>Додати співака</h2>
+                </div>
+                <form id="form-songwriter">
+                    <input type="hidden" name="id" value="0" />
+                    <label>Ім'я співака:</label>
+                    <input type="text" name="artist_name" placeholder="Ім'я співака" required>
+                    <label>URL фото співака:</label>
+                    <input type="url" name="artist_img" placeholder="URL фото співака" required>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Зберегти</button>
+                        <button type="reset" class="btn-reset" title="Очистити форму"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                </form>
+
+                <div id="list-songwriters" class="list-container">
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h2>Додати користувача</h2>
+                </div>
+                <form id="form-user">
+                    <input type="hidden" name="id" value="0" />
+                    <label>Ім'я користувача:</label>
+                    <input type="text" name="user_name" placeholder="Ім'я користувача" required>
+                    <label>Прізвище користувача:</label>
+                    <input type="text" name="user_surname" placeholder="Прізвище користувача" required>
+                    <label>Логін користувача:</label>
+                    <input type="text" name="user_login" placeholder="Логін користувача" required>
+                    <label>Вік користувача:</label>
+                    <input type="number" name="user_age" placeholder="Вік користувача" required>
+                    <label>Пароль:</label>
+                    <input type="password" name="user_password" placeholder="Пароль користувача" required>
+                    <label>Адміністратор:</label>
+                    <input type="text" name="is_Admin" placeholder="Так/Ні" required>
+                    <label>Активний користувач:</label>
+                    <input type="text" name="is_Activated" placeholder="Так/Ні" required>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Зберегти</button>
+                        <button type="reset" class="btn-reset" title="Очистити форму"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                </form>
+
+                <div id="list-users" class="list-container">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

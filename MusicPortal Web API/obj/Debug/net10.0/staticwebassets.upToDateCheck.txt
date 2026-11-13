@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\MusicPortal2-Web-API-master\MusicPortal2-Web-API-master\MusicPortal Web API\wwwroot\index.html
+C:\Users\User\source\repos\MusicPortal2-Web-API-master\MusicPortal2-Web-API-master\MusicPortal Web API\wwwroot\MusicPortal.js
+C:\Users\User\source\repos\MusicPortal2-Web-API-master\MusicPortal2-Web-API-master\MusicPortal Web API\wwwroot\StylePage.css
+wwwroot\MusicPortal.js
+wwwroot\StylePage.css
+wwwroot\index.html
